@@ -5,8 +5,9 @@ import { Routes, RouterModule } from '@angular/router';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 const routes: Routes = [
-  {path: 'departments', component: UserComponent},
-  {path: 'departments', component: RepositoryComponent},
+  {path}
+  {path: 'user', component: UserComponent},
+  {path: 'repository', component: RepositoryComponent},
   {path: '**', component:PagenotfoundComponent}
 
 ];
