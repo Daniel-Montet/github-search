@@ -3,7 +3,20 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apiUrl:"https://api.github.com/",
+  user:"users/",
+  repositories:"repositories",
+  accesstoken:"?access_token=b5ac045230c461971af93fa5d3a2129d75961c94",
+  firebaseconfig:{
+
+    apiKey: "AIzaSyCKSbk59u0Nr-ttV1_MKdQIQbA95IERoNM",
+    authDomain: "git-search-477ce.firebaseapp.com",
+    databaseURL: "https://git-search-477ce.firebaseio.com",
+    projectId: "git-search-477ce",
+    storageBucket: "git-search-477ce.appspot.com",
+    messagingSenderId: "591997703661"
+  }
 };
 
 /*
