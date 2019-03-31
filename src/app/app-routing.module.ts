@@ -1,3 +1,4 @@
+import { LoginComponent } from './login/login.component';
 import { RepositoryComponent } from './repository/repository.component';
 import { UserComponent } from './user/user.component';
 import { NgModule } from '@angular/core';
@@ -5,7 +6,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 const routes: Routes = [
-  {path:'', redirectTo:'/user',pathMatch:'full'},
+  {path:'', redirectTo:'/login',pathMatch:'full'},
+  {path:'login', component: LoginComponent},
   {path: 'user', component: UserComponent},
   {path: 'repository', component: RepositoryComponent},
   {path: '**', component:PagenotfoundComponent}
