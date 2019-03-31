@@ -1,3 +1,13 @@
-<p>
-  user works!
-</p>
+
+  
+<form #userForm="ngForm">
+  <div class="form-group">
+      <input type="text" [(ngModel)]='inputname' name="username" class="form-control">
+  </div>
+{{inputname}}
+
+</form>
+
+<button (click)="displayname()">display</button>
+{{username}}
+{{name}}
