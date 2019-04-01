@@ -1,34 +1,51 @@
-<div class="container">
-    <div class="row">
-        <div class="col-md-5">
-            <div>
-                    <h6>Welcome to Project-Tracker</h6>
-                    <small>log in to search for any project on Github</small>
-                    
-                    <form>
-                            <div class="form-group">
-                              <label for="exampleInputEmail1">Email address</label>
-                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                            </div>
-                            <div class="form-group">
-                              <label for="exampleInputPassword1">Password</label>
-                              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                            </div>
-                            <div class="form-group form-check">
-                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                              <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                            </div>
-                            <button type="submit"  [routerLink]="['/user']" class="btn btn-primary">Submit</button>
-                          </form>
+<div class="container" id="login">
+  <div class="row">
+    <div class="col-md-5">
+      <div>
+        <h6>Welcome to Project-Tracker</h6>
+        <small>log in via social to search for any project on Github</small>
+        <hr>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div id="social" (click)="facebook()">
+                <i class="fa fa-facebook-f  fa-2x"></i>
+              </div>
+
             </div>
-            
+            <div class="col-md-4">
+              <div id="social" (click)="google()">
+                <i class="fa fa-google fa-2x"></i>
 
+              </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+              <div id="social" (click)="twitter()">
+                <i class="fa fa-twitter fa-2x"></i>
+
+              </div>
+
+            </div>
+
+          </div>
         </div>
-        <div class="col-md-5">
-<p>The Angular Router ("the router") borrows from this model. It can interpret a browser URL as an instruction to navigate to a client-generated view. It can pass optional parameters along to the supporting view component that help it decide what specific content to present. You can bind the router to links on a page and it will navigate to the appropriate application view when the user clicks a link. You can navigate imperatively when the user clicks a button, selects from a drop box, or in response to some other stimulus from any source. And the router logs activity in the browser's history journal so the back and forward buttons work as well.</p>
-        </div>
+        <hr>
+
+        <a><small>Dont have an account?<strong>Create one Here</strong></small></a>
+      </div>
+
+
     </div>
+    <div class="col-md-5">
+      <p>The Angular Router ("the router") borrows from this model. It can interpret a browser URL as an instruction to
+        navigate to a client-generated view. It can pass optional parameters along to the supporting view component that
+        help it decide what specific content to present. You can bind the router to links on a page and it will navigate
+        to the appropriate application view when the user clicks a link. You can navigate imperatively when the user
+        clicks a button, selects from a drop box, or in response to some other stimulus from any source. And the router
+        logs activity in the browser's history journal so the back and forward buttons work as well.</p>
+    </div>
+  </div>
 </div>
-
-

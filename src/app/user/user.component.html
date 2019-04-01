@@ -26,7 +26,7 @@
               
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                    
-                    <a class="badge badge-light ml-auto">Logout</a>
+                    <a class="badge badge-light ml-auto" (click)="authService.logout()" >Logout</a>
                  
                 </div>
               </nav>
@@ -47,7 +47,7 @@
             <div class="col-md-6">
                 <form #userForm="ngForm">
                     <div class="form-group">
-                        <input type="text" [(ngModel)]='inputname' name="username" class="form-control">
+                        <input type="text" [(ngModel)]='repositoryname' name="repository" class="form-control">
                     </div>
                   
                   </form>

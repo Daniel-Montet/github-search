@@ -8,6 +8,9 @@ export const environment = {
   user:"users/",
   repositories:"repositories",
   accesstoken:"?access_token=b5ac045230c461971af93fa5d3a2129d75961c94",
+  repos:"repos",
+
+
   firebaseconfig:{
 
     apiKey: "AIzaSyCKSbk59u0Nr-ttV1_MKdQIQbA95IERoNM",
