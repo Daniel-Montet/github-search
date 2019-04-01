@@ -5,10 +5,10 @@
 export const environment = {
   production: false,
   apiUrl:"https://api.github.com/",
-  user:"users/",
+  users:"users/",
   repositories:"repositories",
-  accesstoken:"?access_token=b5ac045230c461971af93fa5d3a2129d75961c94",
-  repos:"repos",
+  accesstoken:"?access_token=043586e9c75ac64b8b0b4007fdc449d18a2d168c",
+  repos:"/repos",
 
 
   firebaseconfig:{

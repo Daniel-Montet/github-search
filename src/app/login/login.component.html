@@ -1,51 +1,62 @@
 <div class="container" id="login">
   <div class="row">
-    <div class="col-md-5">
-      <div>
-        <h6>Welcome to Project-Tracker</h6>
-        <small>log in via social to search for any project on Github</small>
-        <hr>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4">
-              <div id="social" (click)="facebook()">
-                <i class="fa fa-facebook-f  fa-2x"></i>
-              </div>
-
-            </div>
-            <div class="col-md-4">
-              <div id="social" (click)="google()">
-                <i class="fa fa-google fa-2x"></i>
+    <div class="col-sm-6">
+      <div class="card-fluidtext-center" id="rowsocial">
+        <div class="card-body" id="cardlogin">
+          <h5 class="card-title">Welcome to Project-Tracker</h5>
+          <p class="card-text"><small>log in via social to search for any project on Github</small></p>
+          <hr>
+          <div class="container" id="socialcontainer">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="social" (click)="facebook()">
+                  <i class="fa fa-facebook-f  fa-2x"></i>
+                </div>
 
               </div>
+              <div class="col-md-4">
+                <div class="social" (click)="google()">
+                  <i class="fa fa-google fa-2x"></i>
 
-            </div>
-
-
-            <div class="col-md-4">
-              <div id="social" (click)="twitter()">
-                <i class="fa fa-twitter fa-2x"></i>
+                </div>
 
               </div>
 
-            </div>
 
+              <div class="col-md-4">
+                <div class="social" (click)="twitter()" [routerLink]="['/user']">
+                  <i class="fa fa-twitter fa-2x"></i>
+
+                </div>
+
+              </div>
+
+            </div>
           </div>
+
         </div>
-        <hr>
+        <div class="card-footer">
+          <a><small>Dont have an account?<strong>Create one Here</strong></small></a>
 
-        <a><small>Dont have an account?<strong>Create one Here</strong></small></a>
+        </div>
+
+
       </div>
+    </div>
+    <div class="vl"></div>
+    <div class="col-sm-6">
+      <div class="card-fluid">
+        <div class="card-body">
+
+          <p class="card-text" id="card-text">
+            The easiest way to manage your developers progress
+          </p>
+
+        </div>
+      </div>
+    </div>
 
 
-    </div>
-    <div class="col-md-5">
-      <p>The Angular Router ("the router") borrows from this model. It can interpret a browser URL as an instruction to
-        navigate to a client-generated view. It can pass optional parameters along to the supporting view component that
-        help it decide what specific content to present. You can bind the router to links on a page and it will navigate
-        to the appropriate application view when the user clicks a link. You can navigate imperatively when the user
-        clicks a button, selects from a drop box, or in response to some other stimulus from any source. And the router
-        logs activity in the browser's history journal so the back and forward buttons work as well.</p>
-    </div>
+
   </div>
 </div>

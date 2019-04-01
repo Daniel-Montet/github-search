@@ -1,13 +1,62 @@
-#login{
-    margin-top: 5%;
-    
+#login {
+  margin-top: 5%;
+  border: 1px;
+  padding: 10px;
+  box-shadow: 2px 2px #888888;
+  border-radius: 1%;
+  height: 30rem;
+  width: 55rem;
+  background-color: rgb(234, 242, 250);
+  opacity: 0.7;
+  color: rgba(41, 39, 17, 0.979);
+
+
 }
-#social{
-    display: inline-block;
+
+.social {
+  display: inline-block;
   border-radius: 60px;
-  box-shadow: 0px 0px 2px #888;
+  box-shadow: 0px 0px 2px rgb(12, 11, 11);
   padding: 0.5em 0.6em;
+  transition: all .2s ease-in-out;
+
 }
-#rowsocial{
-    height: 150%;
+
+.social:hover {
+  transform: scale(1.5);
+}
+
+
+
+#idlogin {
+
+  opacity: 10;
+
+
+}
+
+#card-text {
+  margin-top: 50%;
+  text-align: center;
+}
+
+#socialcontainer {
+  margin-top: 20%;
+}
+
+#rowsocial {
+  margin-top: 5%;
+}
+
+.card-footer {
+  margin-top: 30%;
+}
+
+.vl {
+  border-left: 3px solid;
+  height: 29rem;
+  position: inherit;
+  left: 50%;
+  margin-left: -1%;
+  
 }

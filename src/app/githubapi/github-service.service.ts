@@ -26,7 +26,7 @@ export class GithubServiceService {
    }
 
    getUser(){
-    return this.http.get<ApiResponse>(environment.apiUrl+environment.user+this.username+environment.accesstoken)
+    return this.http.get<ApiResponse>(environment.apiUrl+environment.users+this.username+environment.accesstoken)
    }
 
    getRepo(){

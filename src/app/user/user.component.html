@@ -29,16 +29,16 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <small class="ml-auto">
               <div class="input-group">
-                <input type="text" class="form-control" aria-label="Text input with segmented dropdown button" [(ngModel)]='inputname' name="username">
+                <input type="text" class="form-control" aria-label="Text input with segmented dropdown button" [(ngModel)]='inputname' name="username" (keyup)='getuserrepos()'>
                 <div class="input-group-append">
-                  <button type="button" class="btn btn-outline-secondary" (click)="displayname()"><small>search</small></button>
+                  <button type="button" class="btn btn-outline-secondary" (click)="getuserrepos()" ><small>search</small></button>
                   <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <span class="sr-only">Toggle Dropdown</span>
                   </button>
                   <div class="dropdown-menu">
-                    <a class="dropdown-item" id="username"><small>username</small></a>
-                    <a class="dropdown-item"id="repositoryname"><small>repository name</small></a>
+                    <a class="dropdown-item" (click)="mdmd"><small>username</small></a>
+                    <a class="dropdown-item" (click)="mxsm"><small>repository name</small></a>
 
                   </div>
                 </div>
@@ -67,6 +67,20 @@
 
         </div>
 
+      </div>
+      <div class="container">
+        <div class="row">
+            <div *ngFor='let repo of userrepository' class="card col-md-4" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">{{repo.name}}</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="card-link"><small>visit project</small></a>
+                  
+                </div>
+              </div>
+        </div>
+         
       </div>
 
 
