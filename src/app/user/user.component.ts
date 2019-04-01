@@ -4,11 +4,14 @@ import {HttpClient} from '@angular/common/http'
 import { environment } from 'src/environments/environment';
 
 interface ApiResponse{
-  login;
-  repository;
-  avatar;
-  followers;
+  avatar_url
   name;
+  email;
+  public_repos;
+  followers;
+  created_at;
+ 
+  
 
 }
 @Component({
@@ -17,8 +20,17 @@ interface ApiResponse{
   styleUrls: ['./user.component.css']
 })
 export class UserComponent implements OnInit {
-username;
+  //github properties
+image;
 name;
+email;
+public_repos;
+followers;
+created_at;
+
+  //
+username;
+
 inputname;
 
 // input(value:string){
@@ -34,8 +46,12 @@ inputname;
 
 displayname(){
   this.http.get<ApiResponse>(environment.apiUrl+environment.user+this.inputname+environment.accesstoken).subscribe(data=>{
-    this.username=data.login;
-    this.name=data.name
+    this.image=data.avatar_url;
+    this.name=data.name;
+    this.email=data.email;
+    this.public_repos=data.public_repos;
+    this.followers=data.followers;
+    this.created_at=data.created_at;
     
   })
 }
