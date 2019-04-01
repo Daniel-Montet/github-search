@@ -13,18 +13,16 @@ export class AuthenticateService {
   user: User;
 
   constructor(public angularfireAuth: AngularFireAuth,public r:Router ){
-    // this.angularfireAuth.authState.subscribe(user =>{
+    this.angularfireAuth.authState.subscribe(user =>{
       
-    //   if (user) {
-    //     this.user = user;
-    //     localStorage.setItem('user', JSON.stringify(this.user));
-        
-    //   } else {
-    //     localStorage.setItem('user', null);
-    //   }
-    // })
-    
-    
+      if (user) {
+        this.user = user;
+        localStorage.setItem('user', JSON.stringify(this.user));
+      } else {
+        localStorage.setItem('user', null);
+      }
+    })
+  
   }
 
   FacebookLogin(){
@@ -40,7 +38,6 @@ export class AuthenticateService {
       })
     })
  }
- 
  doGoogleLogin(){
   return new Promise<any>((resolve, reject) => {
     let provider = new firebase.auth.GoogleAuthProvider();
@@ -53,9 +50,11 @@ export class AuthenticateService {
     })
   })
 }
-//  googlelogin(){
-//    this.angularfireAuth.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider())
-// }
 
-  
+logout(){
+  this.angularfireAuth.auth.signOut();
+ localStorage.removeItem('user');
+ this.r.navigate(['/login']);
+
+}
 }

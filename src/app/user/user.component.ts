@@ -79,7 +79,9 @@ displayname(){
     
   })
  }
-
+ logout(){
+  this.authservice.logout()
+}
  
 }
 
