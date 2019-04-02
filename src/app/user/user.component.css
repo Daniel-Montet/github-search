@@ -17,6 +17,7 @@
 #repocard:hover{
     transform: scale(1.1);
     padding-left: 1px;
+    
 }
 
 .vl {
@@ -59,4 +60,8 @@ width: 10rem;
   margin-top: 5%;
   position: fixed;
   
+}
+
+#userprojects{
+  margin-top: 30rem;
 }

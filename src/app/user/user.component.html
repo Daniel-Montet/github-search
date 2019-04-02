@@ -41,7 +41,7 @@
       </nav>
     </div>
       <div class="col-md-3">
-        <div class="card" id="userdetail">
+        <div class="card" id="userdetail" *ngIf='inputname'>
           <img [src]='image' class="card-img-top">
           <div class="card-body">
             <p><strong>Name:</strong> {{name}}</p>
@@ -70,15 +70,22 @@
         </div>
       </div>
       <div class="vl"></div>
-      <div class="col-md-9">
+      <div class="col-md-9" >
         <div class="container-fluid">
-          <div class="row">
+          <div class="row" id="userprojetcs">
             <div id="repocard" *ngFor='let repo of userrepository' class="card col-md-4 border-secondary"
               style="width: 18rem;">
               <div class="card-body">
                 <small class="card-title">{{repo.name}}</small>
-                <hr>
-                <a [href]='repo.owner.repos_url' class="card-link"><small>visit project</small></a>
+                <div class="card-body">
+                    <small>{{repo.description}}</small>
+
+                </div>
+                
+                <div class="card-footer">
+                    <a [href]='repo.owner.repos_url' class="card-link"><small>visit project</small></a>
+
+                </div>
 
               </div>
             </div>
