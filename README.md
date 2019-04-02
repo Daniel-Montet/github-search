@@ -1,6 +1,6 @@
-# Quotes-App
+# Github-search App
 
-#### A simple daily quote website using angular 7. , 2019
+#### A simple github profile search app website using angular 7. , 2019
 
 #### By **Daniel Montet**
 
@@ -9,7 +9,7 @@
 The app has both business side logic and front end logic  combined to achieve Requirements.
 
 
-# Quote
+# Github-search
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.5.
 
@@ -60,6 +60,7 @@ None at the moment
 -   HTML and bootstrap for page structure
 -   Angular 7 and Nodejs for creation of base files
 -   CSS for styling and visibility of page.
+-   Firebase authentication for social logins
 
 ## Support and contact details
 
