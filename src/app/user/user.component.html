@@ -42,13 +42,17 @@
     </div>
       <div class="col-md-3">
         <div class="card" id="userdetail" *ngIf='inputname'>
-          <img [src]='image' class="card-img-top">
-          <div class="card-body">
+          <img [src]='image' class="card-img-top" style="margin-left:15%;margin-top:2%;">
+          
+          <div class="card-body" id="userprofilebody">
+              <hr>
             <p><strong>Name:</strong> {{name}}</p>
             <p><strong>Date Created:</strong> {{created_at|date}}</p>
             <p><strong>Number of public repositories:</strong> {{public_repos}}</p>
             <p><strong>Email:</strong> {{email}}</p>
+            <hr>
           </div>
+          
           <div class="card-fluid footer">
             <div class="container-fluid">
               <div class="row">
@@ -83,7 +87,7 @@
                 </div>
                 
                 <div class="card-footer">
-                    <a [href]='repo.owner.repos_url' class="card-link"><small>visit project</small></a>
+                    <a [href]='repo.html_url' class="card-link"><small>visit project</small></a>
 
                 </div>
 
