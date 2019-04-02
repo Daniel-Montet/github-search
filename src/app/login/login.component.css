@@ -18,7 +18,7 @@
   border-radius: 60px;
   box-shadow: 0px 0px 2px rgb(12, 11, 11);
   padding: 0.5em 0.6em;
-  transition: all .2s ease-in-out;
+  transition: all 1s ease-in-out;
 
 }
 
@@ -62,7 +62,7 @@
 }
 
 #createlink{
-  transition: all .2s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 #createlink:hover{

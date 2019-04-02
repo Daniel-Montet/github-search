@@ -12,6 +12,8 @@ import { AngularFireModule } from "@angular/fire";
 import { AngularFireAuthModule } from "@angular/fire/auth";
 import { environment } from 'src/environments/environment';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { NgProgressHttpModule } from '@ngx-progressbar/http';
+import { NgProgressModule } from '@ngx-progressbar/core';
 
 
 @NgModule({
@@ -29,7 +31,9 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
     FormsModule,
     AngularFireModule.initializeApp(environment.firebaseconfig),
     AngularFireAuthModule,
-    AngularFontAwesomeModule
+    AngularFontAwesomeModule,
+    NgProgressModule,// normal progress bar
+    NgProgressHttpModule // progress bar to load http requests
   ],
   providers: [],
   bootstrap: [AppComponent]
