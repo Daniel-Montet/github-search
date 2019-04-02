@@ -4,14 +4,14 @@
 
 export const environment = {
   production: false,
-  apiUrl:"https://api.github.com/",
-  users:"users/",
-  repositories:"repositories",
-  accesstoken:"?access_token=043586e9c75ac64b8b0b4007fdc449d18a2d168c",
-  repos:"/repos",
+  apiUrl: "https://api.github.com/",
+  users: "users/",
+  repositories: "repositories",
+  accesstoken: "?access_token=043586e9c75ac64b8b0b4007fdc449d18a2d168c",
+  repos: "/repos",
 
 
-  firebaseconfig:{
+  firebaseconfig: {
 
     apiKey: "AIzaSyCKSbk59u0Nr-ttV1_MKdQIQbA95IERoNM",
     authDomain: "git-search-477ce.firebaseapp.com",
